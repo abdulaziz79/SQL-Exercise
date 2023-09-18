@@ -1,3 +1,5 @@
+1-
+
 "SELECT name FROM students"
 
 "SELECT * FROM students WHERE Age > 30"
@@ -40,3 +42,17 @@ WHERE name="Layal"
 
 DELETE FROM students
 WHERE name= "Layal";
+
+3- 
+
+"SELECT employees.Name,companies.Name, companies.Date FROM companies
+INNER JOIN employees"
+
+"SELECT employees.name FROM companies
+INNER JOIN employees
+on companies.Name = employees.Company
+WHERE companies.Date < 2000"
+
+"SELECT companies.name FROM companies
+INNER JOIN employees on employees.Company=companies.Name
+WHERE employees.Role="graphic designer"""
